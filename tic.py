@@ -12,7 +12,7 @@ def draw():
         print(board[3], board[4], board[5])
         print(board[6], board[7], board[8])
         print()
-        
+
 def print_grid():
     for i in range(len(board)):
         for j in range(len(board[i])):
@@ -29,5 +29,6 @@ def init_game():
     Player2 = raw_input("Enter in a position from 1-9  ")
     type(Player2)
     print_grid()
+    print "change"
 
 init_game()
