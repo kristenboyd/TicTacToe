@@ -14,6 +14,7 @@ def print_grid():
         print ("\n___________")
 
 
+
 def init_game():
     print ("Welcome to Tic Tac Toe" + "\n Player One will be 'X'"
     + "\n Player Two will be 'O'")
@@ -23,9 +24,17 @@ def start_game():
     playing = True
     while playing == True:
         print_grid()
-        player_choice = raw_input( "Enter in a position from 1-9  ")
-        marks(player_choice)
 
+
+def p1 ():
+    player_1 = ("Player One")
+    print (player_1 + "Enter a position from 1-9")
+    marks(player_choice)
+
+def p2():
+    player_1 = ("Player One")
+    print (player_1 + "Enter a position from 1-9")
+    marks(player_choice)
 
 def marks(player_choice):
     for i in range(len(board)):
@@ -33,7 +42,12 @@ def marks(player_choice):
             print (board[i][j])
 
             if (board[i][j]) == (player_choice):
-                print ('x')
                 board[i][j] = ('o')
+
+
+
+
+
+
 
 init_game()
