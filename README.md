@@ -7,13 +7,11 @@
 1. Players continue to play until board is filled
 1. One player will win or a tie will be issued
 
-## How many many ways can a player win?
+### How many many ways can a player win?
 
 * Diagonally
 * Horizontally
 * Vertically
-
-![TicTacToe](Downloads/game.jpg)
 
 
 
