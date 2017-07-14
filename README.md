@@ -13,7 +13,8 @@
 * Horizontally
 * Vertically
 
-![Game](game.jpg)
+![TicTacToe](Downloads/game.jpg)
+
 
 
 
