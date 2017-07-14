@@ -14,7 +14,7 @@
 * Vertically
 
 
-![TicTacToe](https://github.com/kristenboyd/TicTacToe/blob/master/game.jpg)
+![TicTacToe](https://github.com/kristenboyd/TicTacToe/blob/master/game2.png)
 
 
 
