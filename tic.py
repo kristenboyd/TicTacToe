@@ -27,22 +27,21 @@ def start_game():
 
 
 def p1 ():
-    player_1 = ("Player One")
-    print (player_1 + "Enter a position from 1-9")
+    player_1 = raw_input ("Player One, choose a spot"):
+        if board = [player_1]:
+            print ('x' + "Player Two's Turn")
+    
+    player_2 = raw_input ("Player Two choose a spot"):
     marks(player_choice)
 
-def p2():
-    player_1 = ("Player One")
-    print (player_1 + "Enter a position from 1-9")
-    marks(player_choice)
 
-def marks(player_choice):
-    for i in range(len(board)):
-        for j in range(len(board[i])):
-            print (board[i][j])
+# def marks(player_choice):
+    # for i in range(len(board)):
+        # for j in range(len(board[i])):
+           # print (board[i][j])
 
-            if (board[i][j]) == (player_choice):
-                board[i][j] = ('o')
+            #if (board[i][j]) == (player_choice):
+                # board[i][j] = ('o')
 
 
 
