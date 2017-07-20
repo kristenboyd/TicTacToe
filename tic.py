@@ -27,7 +27,7 @@ def start_game():
 
 
 def p1 ():
-    player_1 = raw_input ("Player One, choose a spot"):
+    player_1 = raw_input ("Player One, choose a spot")
         if board = [player_1]:
             print ('x' + "Player Two's Turn")
     
