@@ -13,26 +13,18 @@ def print_grid():
                 print (board[i][j], end=" | ")
         print ("\n___________")
 
-
-
-def init_game():
-    print ("Welcome to Tic Tac Toe" + "\n Player One will be 'X'"
-    + "\n Player Two will be 'O'")
-    start_game()
-
-def start_game():
-    playing = True
-    while playing == True:
-        print_grid()
-
-
-def p1 ():
-    player_1 = raw_input ("Player One, choose a spot")
-        if board = [player_1]:
-            print ('x' + "Player Two's Turn")
+        print ("Welcome to Tic Tac Toe" + "\n Player One will be 'x'" + "\n Player Two will be 'o'")
+        
+while True: 
+    input = raw_input("Selcet a position")
+    input = int(input)
     
-    player_2 = raw_input ("Player Two choose a spot"):
-    marks(player_choice)
+    if board[input] != 'x' and board[input] != 'o':
+        board[input]= 'x'
+        
+    else: 
+        print ("This position is taken, please choose a different spot")
+
 
 
 # def marks(player_choice):
