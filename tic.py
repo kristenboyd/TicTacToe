@@ -6,6 +6,8 @@ board = [
     ['7','8','9']
 ]
 
+
+
 def print_intro():
     "Use the board to choose you position number, \nyou can only choose numbers 1-9"
 
@@ -26,18 +28,68 @@ def init_game():
 
 def get_position(playerturn):
     input = raw_input("player " + str(playerturn) + " Selcet a position ")
-
-    if input == 1:
-        board[1] = 'X'
-        print_grid()
-
+    input = int(input)
 
 
     if(valid_input(input)):
         return input
+    else:
+        print ("invalid input")
+        get_position(playerturn)
+
+def valid_input(input):
+    valid = True
+    if (input) >= 1 and (input) <= 9:
+        valid = True
+    else:
+        return False
+    if board[get_row_index(input)][get_colum_index(input)] == 'X' or board[get_row_index(input)][get_colum_index(input)] == 'O':
+        valid = False
 
 
 
+def get_row_index(input):
+
+    if input == 1:
+        return 0
+    if input == 2:
+        return 0
+    if input == 3:
+        return 0
+    if input == 4:
+        return 1
+    if input == 5:
+        return 1
+    if input == 6:
+        return 1
+    if input == 7:
+        return 2
+    if input == 8:
+        return 2
+    if input == 9:
+        return 2
+
+
+def get_colum_index(input):
+
+    if input == 1:
+        return 0
+    if input == 2:
+        return 1
+    if input == 3:
+        return 2
+    if input == 4:
+        return 0
+    if input == 5:
+        return 1
+    if input == 6:
+        return 2
+    if input == 7:
+        return 0
+    if input == 8:
+        return 1
+    if input == 9:
+        return 2
 
 
 
@@ -51,6 +103,12 @@ def start_game():
     print ("game over")
 
 '''
+
+    if board[input] == 1:
+         board[1]= 'x'
+    else:
+            print ("This position is taken, please choose a different spot"):
+
 # def marks(player_choice):
     # for i in range(len(board)):
         # for j in range(len(board[i])):
