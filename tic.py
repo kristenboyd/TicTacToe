@@ -29,8 +29,6 @@ def init_game():
 def get_position(playerturn):
     input = raw_input("player " + str(playerturn) + " Selcet a position ")
     input = int(input)
-
-
     if(valid_input(input)):
         return input
     else:
@@ -38,15 +36,10 @@ def get_position(playerturn):
         get_position(playerturn)
 
 def valid_input(input):
-    valid = True
-    if (input) >= 1 and (input) <= 9:
-        valid = True
-    else:
+    if (((input) >= 1 and (input) <= 9) == False) or board[get_row_index(input)][get_colum_index(input)] == 'X' or board[get_row_index(input)][get_colum_index(input)] == 'O':
         return False
-    if board[get_row_index(input)][get_colum_index(input)] == 'X' or board[get_row_index(input)][get_colum_index(input)] == 'O':
-        valid = False
-
-
+    else:
+        return True
 
 def get_row_index(input):
 
@@ -99,9 +92,20 @@ def start_game():
     while running:
         if playerturn == 1:
             postion = get_position(playerturn)
+            print (position)
+            mark_position(playerturn,input)
+            print_grid()
+
             running = False
     print ("game over")
 
+def mark_position(playerturn, input):
+    if playerturn == 1:
+        board[get_row_index(input)][get_colum_index(input)] = 'X'
+    else:
+        board[get_row_index(input)][get_colum_index(input)] = 'O'
+
+    return False
 '''
 
     if board[input] == 1:
